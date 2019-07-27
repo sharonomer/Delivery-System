@@ -66,6 +66,7 @@ public class Session extends JFrame {
 	public static JLabel lblUserAddedSuccessfully;
 	public static JButton btnRefresh;
 	public static JButton btnRefresh_1;
+	public static JButton btnRefresh_3;
 	public static String id;
 	public static WareHouse warehouse;
 	public static WareHouse originWarehouse;
@@ -384,6 +385,7 @@ public class Session extends JFrame {
 										Session.vehicle=v;
 									}
 								}
+								btnRefresh_3.doClick();
 								switchPanels(truckDriverPanel);
 							}
 						}
@@ -823,7 +825,7 @@ public class Session extends JFrame {
 							}
 						}
 		            	VehiclePanel.btnRefresh.doClick();
-		            	btnRefresh.doClick();
+		            	btnRefresh_3.doClick();
 		            	System.out.println("Truck driver permissions");
 		            	switchPanels(truckDriverPanel);
 		            }
@@ -1620,7 +1622,7 @@ public class Session extends JFrame {
 		adminPanel.add(btnRefresh);
 		
 		
-		JButton btnRefresh_3 = new JButton("Refresh");
+		btnRefresh_3 = new JButton("Refresh");
 		btnRefresh_3.setForeground(new Color(255, 255, 255));
 		btnRefresh_3.setBackground(new Color(25, 25, 112));
 		btnRefresh_3.setBounds(365, 377, 89, 23);
