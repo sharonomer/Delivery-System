@@ -97,7 +97,7 @@ public class Session extends JFrame {
 		contentPane.add(layeredPane);
 		layeredPane.setLayout(new CardLayout(0, 0));
 		
-		//-----------ALL PANES--------------
+		//-----------ALL PANES---------------
 		
 		loginPanel = new JPanel();
 		loginPanel.setBackground(new Color(25, 25, 112));
